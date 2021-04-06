@@ -28,6 +28,7 @@ Project is created with:
 Below maven dependency used:
 - Junit (used for unit and integration testing)
 - System-Lambda (Used to read the output text of System.out.println for printGameBoard())
+- Surefire to run the JUnit testcases.
 ## Setup
 To run the project locally using maven
 ###Prerequisites
@@ -71,5 +72,11 @@ Player 1 [RED] - choose column (1-7):
 We are following TDD approach for development, Below screenshot help to understand the test coverage of code.
   
 ![plot](./resources/CodeCoverage.png)
-
+Test Case result of Surefire report:
+```
+-------------------------------------------------------------------------------
+Test set: com.game.ConnectFourTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in com.game.ConnectFourTest
+```
 Note: I wrote the Unit test cases for the ConnectFour class only.
