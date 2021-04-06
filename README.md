@@ -81,6 +81,3 @@ Test set: com.game.ConnectFourTest
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in com.game.ConnectFourTest
 ```
 Note: I wrote the Unit test cases for the ConnectFour class only.
-
-
-Note: I wrote the Unit test cases for the ConnectFour class only.
