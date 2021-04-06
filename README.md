@@ -42,7 +42,7 @@ $ mvn clean install
 ```
 2 Run below command to locate the generated jar file.
 ```
-$ cd target
+$ cd target/
 ```
 3 Run below java command to run the application from jar file
 ```
