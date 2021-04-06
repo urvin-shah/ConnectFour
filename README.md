@@ -43,7 +43,7 @@ $ mvn clean install
 ```
 2 Run below command to locate the generated jar file.
 ```
-$ cd target
+$ cd target/
 ```
 3 Run below java command to run the application from jar file
 ```
@@ -72,6 +72,7 @@ Player 1 [RED] - choose column (1-7):
 We are following TDD approach for development, Below screenshot help to understand the test coverage of code.
   
 ![plot](./resources/CodeCoverage.png)
+
 Test Case result of Surefire report:
 ```
 -------------------------------------------------------------------------------
@@ -79,4 +80,7 @@ Test set: com.game.ConnectFourTest
 -------------------------------------------------------------------------------
 Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in com.game.ConnectFourTest
 ```
+Note: I wrote the Unit test cases for the ConnectFour class only.
+
+
 Note: I wrote the Unit test cases for the ConnectFour class only.
