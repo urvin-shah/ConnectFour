@@ -10,6 +10,8 @@ package com.game;
  */
 public class ConnectFour {
 
+    private static final int WINNER_MAX_ROW_INC = 3;
+    private static final int WINNER_MAX_COL_INC = 4;
     private int noOfRows;
     private int noOfColumns;
 
@@ -55,7 +57,7 @@ public class ConnectFour {
     public boolean isWinner(char player,int rowPos,int colPos) {
         // Horizontal check for winning
         if(connFourBoard[rowPos][3] == player) {
-            for (int col = 0; col < 4; col++) {
+            for (int col = 0; col < WINNER_MAX_COL_INC; col++) {
                 if(connFourBoard[rowPos][col] == player &&
                    connFourBoard[rowPos][col+1] == player &&
                         connFourBoard[rowPos][col+2] == player &&
@@ -66,7 +68,7 @@ public class ConnectFour {
         }
 
         // Vertical Check for winning
-        for(int row=0;row<3;row++) {
+        for(int row=0;row < WINNER_MAX_ROW_INC;row++) {
             if(connFourBoard[row][colPos] == player &&
                 connFourBoard[row+1][colPos] == player &&
                 connFourBoard[row+2][colPos] == player &&
@@ -76,8 +78,8 @@ public class ConnectFour {
         }
 
         // Forward diagonal check
-        for(int row=0;row<3;row++) {
-            for(int col=0;col<4;col++) {
+        for(int row=0;row<WINNER_MAX_ROW_INC;row++) {
+            for(int col=0;col<WINNER_MAX_COL_INC;col++) {
                 if(connFourBoard[row][col] == player &&
                         connFourBoard[row+1][col+1] == player &&
                         connFourBoard[row+2][col+2] == player &&
@@ -88,7 +90,7 @@ public class ConnectFour {
         }
 
         // Backward Diagonal check
-        for(int row=0;row<3;row++) {
+        for(int row=0;row<WINNER_MAX_ROW_INC;row++) {
             for(int col=3;col<this.noOfColumns;col++) {
                 if(connFourBoard[row][col] == player &&
                         connFourBoard[row+1][col-1] == player &&
